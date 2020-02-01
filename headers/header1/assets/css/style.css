@@ -1,0 +1,125 @@
+/*Default style start*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: none;
+}
+/*Default style end*/
+/*header top section start*/
+.phone p{
+    padding: 5px 10px;
+}
+
+.social-link ul li {
+    display: inline-block;
+}
+
+.social-link ul li a {
+    display: block;
+    color: darkgray;
+    padding: 5px;
+}
+
+.social-link ul li a:hover {
+    color: #4a4a4a;
+}
+/*header top section end*/
+/*header main navigation section star*/
+
+div.menu-shadow{
+    position: absolute;
+    background-image: url('../images/menu_bottom_shadow.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 81px;
+    width: 100%;
+}
+.main-navigation ul {
+    text-align: right;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+}
+
+.main-navigation ul li a {
+    display: block;
+    color: #4a4a4a;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px;
+    position: relative;
+    transition: all .5s;
+}
+
+.main-navigation ul li a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    border-top: 3px solid #999;
+    display: none;
+    transition: all .5s;
+}
+
+.main-navigation ul li a:hover:before {
+    display: block;
+    transition: all .5s;
+}
+
+.logo h2 {
+    color: #4a4a4a;
+    margin: 0;
+    padding: 5px 0;
+}
+/*header main navigation section end*/
+
+/* mobile main navigation menu start */
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.mobile-menu ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.mobile-menu a:hover {
+    color: #818181;
+}
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ffffff;
+}
+@media screen and (max-height: 450px) {
+    .mobile-menu {padding-top: 15px;}
+    .mobile-menu a {font-size: 18px;}
+}
+/* mobile main navigation menu end */

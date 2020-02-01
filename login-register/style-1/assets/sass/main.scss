@@ -1,0 +1,109 @@
+@import "base/_mixins.scss";
+@import "base/_variables.scss";
+@import "base/_default.scss";
+
+/*user access area start*/
+.user-access-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  .ua-info {
+    background-image: url('../images/ua-bg-1.jpg');
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      .ua-logo {
+        padding: 15px;
+        width: 130px;
+      }
+      .ua-cont {
+        position: relative;
+        top: -10px;
+        align-self: center;
+        text-align: center;
+        color: #ffffff;
+        text-transform: capitalize;
+        h1 {
+          font-size: 3em;
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 5px;
+        }
+        h4 {
+          font-size: 2em;
+          font-weight: 400;
+          margin-top: 0;
+        }
+      }
+      .social-link {
+        text-align: center;
+        ul {
+          margin-bottom: 10px;
+          li {
+            display: inline-block;
+            a {
+              display: block;
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              font-size: 1.3em;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ua-form {
+    min-height: 400px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    form {
+      align-self: center;
+      position: relative;
+      top: -25px;
+      .form-action-wrapper{
+        button{
+          text-transform: uppercase;
+          border: none;
+          background: $primary;
+          padding: 10px 30px;
+          @include radius(30px);
+          color: #ffffff;
+          cursor: pointer;
+          font-weight: 600;
+          letter-spacing: .5px;
+          &:hover{
+            background: $hover-color;
+          }
+        }
+        a{
+          text-transform: capitalize;
+          &:hover{
+            color: $primary;
+          }
+        }
+      }
+    }
+    .navigate-btn{
+      border-top: 1px solid #d3d3d3;
+      padding-top: 15px;
+      p{
+        text-transform: capitalize;
+        margin-bottom: 5px;
+      }
+      a{
+        font-weight: 700;
+        letter-spacing: .5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+/*user access area end*/

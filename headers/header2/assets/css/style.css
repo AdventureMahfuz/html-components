@@ -1,0 +1,197 @@
+/*Default style start*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: none;
+}
+/*Default style end*/
+/*header top section start*/
+.social-link ul li {
+    display: inline-block;
+}
+
+.social-link ul li a {
+    display: block;
+    color: darkgray;
+    padding: 5px;
+    font-size: .8em;
+}
+
+.social-link ul li a:hover {
+    color: #fff;
+}
+.top-navigation ul {
+    text-align: right;
+}
+
+.top-navigation ul li {
+    display: inline-block;
+}
+
+.top-navigation ul li a {
+    display: block;
+    color: darkgray;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: .8em;
+}
+
+.top-navigation ul li a:hover {
+    color: #fff;
+}
+/*header top section end*/
+/*header middle section start*/
+.middle-section{
+    padding: 10px 0;
+}
+.logo h2 {
+    color: #4a4a4a;
+    margin: 0;
+    padding: 5px 0;
+}
+.middle-right ul {
+    text-align: right;
+}
+
+.middle-right ul li {
+    display: inline-block;
+}
+
+.middle-right ul li a {
+    display: block;
+    color: #4a4a4a;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0 15px;
+    position: relative;
+    transition: all .5s;
+    text-align: left;
+    border-right: 1px dotted #999;
+}
+
+.middle-right ul li a button{
+    position: relative;
+    top: -10px
+}
+.middle-right ul li a span{
+    font-weight: 300;
+}
+.middle-right ul li a span i{
+    color: green;
+}
+.login-btn a{
+    border: 2px solid green;
+    padding: 5px 20px;
+    color: #4a4a4a;
+}
+.login-btn a:hover{
+    background: green;
+    color: #fff;
+}
+/*header middle section end*/
+/*header main navigation section star*/
+section.bottom-section {
+    background: #17A43B;
+}
+
+.main-navigation-section ul li {
+    display: inline-block;
+}
+
+.main-navigation-section ul li a {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-right: 1px solid #fff;
+}
+
+.main-navigation-section ul li:last-child a {
+    border-right: none;
+}
+
+.main-navigation-section ul li a:hover {
+    color: #4a4a4a;
+}
+
+.search-area .form-group {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.search-area .form-group button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    padding: 7px;
+    background: initial;
+    color: #fff;
+}
+
+.search-area .form-group input {
+    background: initial;
+    border-radius: initial;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+}
+
+.search-area {
+    background: #4AB866;
+    padding: 5px 15px;
+}
+
+.search-area .form-control:focus {box-shadow: initial;border: initial;border-bottom: 1px solid #fff;}
+
+.main-navigation-section ul li:first-child a {
+    padding-left: 0;
+}
+/*header main navigation section end*/
+
+/* mobile main navigation menu start */
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.mobile-menu ul li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.mobile-menu a:hover {
+    color: #818181;
+}
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ffffff;
+}
+@media screen and (max-height: 450px) {
+    .mobile-menu {padding-top: 15px;}
+    .mobile-menu a {font-size: 18px;}
+}
+/* mobile main navigation menu end */

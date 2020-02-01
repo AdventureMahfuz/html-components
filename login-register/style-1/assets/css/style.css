@@ -1,0 +1,121 @@
+/*default style start*/
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*default style end*/
+/*user access area start*/
+.user-access-wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+.user-access-wrapper .ua-info {
+  background-image: url("../images/ua-bg-1.jpg");
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.user-access-wrapper .ua-info .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.user-access-wrapper .ua-info .overlay .ua-logo {
+  padding: 15px;
+  width: 130px;
+}
+.user-access-wrapper .ua-info .overlay .ua-cont {
+  position: relative;
+  top: -10px;
+  align-self: center;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.user-access-wrapper .ua-info .overlay .ua-cont h1 {
+  font-size: 3em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.user-access-wrapper .ua-info .overlay .ua-cont h4 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 0;
+}
+.user-access-wrapper .ua-info .overlay .social-link {
+  text-align: center;
+}
+.user-access-wrapper .ua-info .overlay .social-link ul {
+  margin-bottom: 10px;
+}
+.user-access-wrapper .ua-info .overlay .social-link ul li {
+  display: inline-block;
+}
+.user-access-wrapper .ua-info .overlay .social-link ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 1.3em;
+}
+.user-access-wrapper .ua-form {
+  min-height: 400px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.user-access-wrapper .ua-form form {
+  align-self: center;
+  position: relative;
+  top: -25px;
+}
+.user-access-wrapper .ua-form form .form-action-wrapper button {
+  text-transform: uppercase;
+  border: none;
+  background: #111;
+  padding: 10px 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.user-access-wrapper .ua-form form .form-action-wrapper button:hover {
+  background: #323232;
+}
+.user-access-wrapper .ua-form form .form-action-wrapper a {
+  text-transform: capitalize;
+}
+.user-access-wrapper .ua-form form .form-action-wrapper a:hover {
+  color: #111;
+}
+.user-access-wrapper .ua-form .navigate-btn {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 15px;
+}
+.user-access-wrapper .ua-form .navigate-btn p {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.user-access-wrapper .ua-form .navigate-btn a {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+/*user access area end*/
+
+/*# sourceMappingURL=style.css.map */
