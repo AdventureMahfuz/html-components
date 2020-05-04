@@ -1,0 +1,592 @@
+:root {
+    --btnColor: rgb(0, 146, 69);
+    --primaryColor: #33B447;
+    --highlightColor: #073669;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+body.welcome-body {
+    background: none !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+body.welcome-body:before {
+    position: initial !important;
+    background-image: none;
+}
+
+.gbtn {
+    margin-top: 50px;
+}
+
+.gbtn a {
+    background: var(--btnColor);
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+/*login style*/
+
+.mobile-logo-wrapper {
+    display: none;
+}
+
+.useraccess-wrapper {
+    background-image: url('../images/login-registration-reset-bg.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 95vh;
+}
+
+.user-access-logo {
+    left: 50px;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+}
+
+.user-access-logo img {
+    width: auto;
+}
+
+.login-wrapper,
+.register-wrapper,
+.forgot-wrapper {
+    position: relative;
+    top: -15px;
+}
+
+.login-thumb {
+    width: 50%;
+    float: left;
+    padding: 0 50px 0 0;
+}
+
+.login-thumb.login_tab {
+    max-height: 76vh;
+    position: relative;
+    top: -25px;
+}
+
+.login-thumb.login_tab img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.login-thumb img {
+    width: 100%;
+}
+
+.login-form {
+    width: 50%;
+    float: right;
+}
+
+.login-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-login p {
+    text-transform: capitalize;
+    color: var(--highlightColor);
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.social-login ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-login ul li {
+    display: inline-block;
+}
+
+.social-login ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.social-login ul li a img {
+    width: 100%;
+}
+
+.useraccess-tab-control {
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.useraccess-tab-control ul {
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.useraccess-tab-control ul li {
+    display: inline-block;
+}
+
+.useraccess-tab-control ul li a {
+    display: block;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 35px;
+    color: var(--highlightColor);
+}
+
+.useraccess-tab-control ul li a.active {
+    background: var(--btnColor);
+    color: #fff;
+}
+
+.login-form h2 {
+    text-transform: uppercase;
+    word-spacing: 5px;
+    margin: 10px;
+    font-size: 2em;
+    color: var(--highlightColor);
+    font-weight: 500;
+}
+
+.login-form .form-group {
+    position: relative;
+}
+
+.login-form .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    -webkit-transform: translate(-3%, -50%);
+    -moz-transform: translate(-3%, -50%);
+    -ms-transform: translate(-3%, -50%);
+    -o-transform: translate(-3%, -50%);
+    transform: translate(-3%, -50%);
+    color: #d3d3d3;
+    font-size: 1.7em;
+}
+
+.login-form .form-group i.fa.fa-envelope {
+    font-size: 1.3em;
+}
+
+.login-form .form-control {
+    padding: 28px 0 28px 40px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 2px solid var(--primaryColor);
+    font-size: 1.3em;
+}
+
+.login-form .form-control:focus {
+    box-shadow: none
+}
+
+select#gender {
+    font-size: 1.3em;
+    color: gray;
+    width: 100%;
+    padding: 15px 0 15px 40px;
+    border: none;
+    border-bottom: 2px solid var(--primaryColor);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.form_checkbox,
+.terms {
+    float: left !important;
+}
+
+.form_checkbox label {
+    line-height: 1.1em;
+}
+
+.terms label {
+    color: var(--highlightColor);
+    font-size: 1em;
+}
+
+.form_checkbox label,
+.forgot_pass a {
+    text-transform: capitalize;
+    color: var(--highlightColor);
+    font-weight: 500;
+    font-size: 1.3em;
+    float: right;
+}
+
+.form_checkbox input {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.terms_checkbox input {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+}
+
+.terms_checkbox label {
+    width: 90%;
+}
+
+.action-btn {
+    position: relative;
+    margin-top: 30px;
+}
+
+.action-btn svg {
+    position: absolute;
+    left: 48%;
+    top: -28px;
+}
+
+.action-btn button {
+    border: none;
+    background: var(--btnColor);
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.ua-footer {
+    text-align: center;
+}
+
+.ua-footer ul li {
+    display: inline-block;
+}
+
+.ua-footer ul li a {
+    display: block;
+    text-transform: capitalize;
+    padding: 5px;
+    color: var(--highlightColor) !important;
+}
+
+
+/*forgot password page*/
+
+.forgot-wrapper {
+    margin: 90px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.useraccess-max-width {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 94vh;
+    display: table;
+}
+
+.useraccess-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*login registration style four*/
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .useraccess-max-width {
+        max-width: 1250px;
+        margin: 0 auto;
+        min-height: 94vh;
+        display: table;
+    }
+    .useraccess-center {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+
+/*Medium Layout*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .login-thumb.login_tab {
+        top: 25px;
+    }
+    .login-form .form-control {
+        padding: 25px 0 25px 35px;
+    }
+    select#gender {
+        padding: 15px 0 15px 40px;
+    }
+    .action-btn {
+        margin-top: 20px;
+    }
+    .social-login {
+        margin-top: 25px;
+    }
+    .login-form h2 {
+        font-size: 2em;
+    }
+    .action-btn button {
+        font-size: 1.3em;
+    }
+}
+
+
+/*Tablet Layout: 768px*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .login-thumb.login_tab {
+        top: 25px;
+    }
+    .login-thumb {
+        margin-top: 30px;
+    }
+    .login-form .form-control {
+        padding: 25px 0 25px 35px;
+    }
+    select#gender {
+        padding: 15px 0 15px 40px;
+    }
+    .action-btn {
+        margin-top: 25px;
+    }
+    .social-login {
+        margin-top: 25px;
+    }
+    .login-form h2 {
+        font-size: 1.5em;
+    }
+    .action-btn button {
+        font-size: 1.3em;
+    }
+}
+
+
+/*Mobile Layout: 320px*/
+
+@media only screen and (max-width: 767px) {
+    .useraccess-max-width {
+        min-height: initial !important;
+        display: initial;
+    }
+    .useraccess-center {
+        display: initial;
+        vertical-align: initial;
+    }
+    .useraccess-wrapper {
+        background-image: url('../images/ua-mobile-bg.jpg');
+        min-height: 70vh;
+    }
+    .useraccess-tab-control ul li a {
+        font-size: 1.2em;
+    }
+    .action-btn button {
+        font-size: 1.3em;
+        padding: 8px 25px;
+    }
+    .useraccess-wrapper {
+        height: auto;
+    }
+    .login-form {
+        width: 100%;
+        float: initial;
+        padding: 0;
+    }
+    .useraccess-tab-control {
+        padding-left: 0;
+        position: initial;
+    }
+    .login-form h2 {
+        display: none;
+    }
+    .login-form h2.forgot-title {
+        display: block;
+        font-size: 1.5em;
+    }
+    .login-wrapper,
+    .register-wrapper,
+    .forgot-wrapper {
+        margin: 40px 0;
+    }
+    .login-thumb {
+        display: none;
+    }
+    .mobile-logo-wrapper {
+        display: block;
+    }
+    .user-access-logo {
+        display: none;
+    }
+    .mobile-logo-wrapper {
+        position: relative;
+        background: linear-gradient(rgba(0, 174, 239, 1) 50%, rgba(163, 212, 229, 1) 80%);
+    }
+    .mobile-logo-wrapper span {
+        display: block;
+        width: 100%;
+        height: 50px;
+        background: #caf5ff;
+        position: absolute;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        bottom: -1px;
+    }
+    .mobile-logo {
+        width: 120px;
+        margin: 0 auto;
+        padding: 40px 0 90px 0;
+        display: block;
+    }
+    .mobile-logo img {
+        width: 100%;
+    }
+    .ua-footer {
+        display: none;
+    }
+    .ua-mobile-header {
+        display: flex;
+        padding: 15px 15px 0 15px;
+    }
+    .ua-mobile-header h4 {
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2em;
+        word-spacing: 5px;
+    }
+    .navigation-btn {
+        font-size: 30px;
+        color: #ffffff;
+        margin: 0;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        /*background-color: rgba(38, 38, 38, 0.95);*/
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 30px;
+        background: var(--btnColor);
+    }
+    #mySidenav .welcome-footer-right {
+        display: none;
+    }
+    div#mySidenav .welcome-footer {
+        padding: 0 !important;
+    }
+    .sidenav ul li:last-child a {
+        border-bottom: none;
+    }
+    .sidenav ul li a {
+        padding: 10px;
+        font-size: 1.4em;
+        text-align: left;
+        color: #fff !important;
+        display: block;
+        transition: 0.3s;
+        text-transform: capitalize;
+        border-bottom: 1px solid #999;
+    }
+    .sidenav a svg {
+        display: none;
+    }
+    .sidenav a:hover {
+        background: #cc0000;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 36px;
+        margin: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #ffffff;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+}
+
+
+/*Wide Mobile Layout: 480px*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

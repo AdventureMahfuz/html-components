@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Allocate mail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 1em;
+            line-height: 1.5em;
+            letter-spacing: 0.5px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .content-wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        p {
+            text-transform: capitalize;
+        }
+
+        .table-wrapper {
+            margin-top: 25px;
+        }
+
+        table {
+            margin: 10px 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            color: #4a4a4a;
+            min-width: 200px;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            text-transform: capitalize;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+
+        span.name {
+            text-transform: uppercase;
+        }
+
+        .main-content {
+            padding: 30px 0;
+            overflow: hidden;
+        }
+
+        @media only screen and (max-width: 767px) {
+            th {
+                font-weight: 600;
+                font-size: 0.9em;
+                min-width: initial;
+            }
+
+            .content-wrapper {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content-wrapper">
+    <div class="main-content">
+        <p>Good afternoon <span class="name">name</span></p>
+        <p>work request 894589 has been allocated to you by a person name</p>
+        <div class="table-wrapper">
+            <table class="table" cellspacing="0">
+                <tr>
+                    <th>Request Ref:</th>
+                    <td>894589</td>
+                </tr>
+                <tr>
+                    <th>title:</th>
+                    <td>remove SSRS report access in Cust Plus</td>
+                </tr>
+                <tr>
+                    <th>parent item:</th>
+                    <td>customerPlus 2015</td>
+                </tr>
+                <tr>
+                    <th>request type:</th>
+                    <td>change to application</td>
+                </tr>
+                <tr>
+                    <th>required by date:</th>
+                    <td>19/07/2019 - 00:00:00</td>
+                </tr>
+                <tr>
+                    <th>requested by:</th>
+                    <td>
+                        katie churchward (cultural alignment workstrem manager)
+                    </td>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>
+                        remove access for everyone to the SSRS reports in customerPlus. they are inaccurate (not update
+                        in line w performance of customerPlus. qlikview is the perfered reporting solution for managers.
+                        the relevant commu reports won't be abailable from 19th July.
+                    </td>
+                </tr>
+                <tr>
+                    <th>business justification:</th>
+                    <td>
+                        to help improve performance of CutomerPlus
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

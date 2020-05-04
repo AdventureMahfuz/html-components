@@ -1,0 +1,169 @@
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style>
+    .row.heading {
+        padding: 10px 0;
+    }
+    .invoice-by {
+        padding-top: 30px;
+    }
+    .invoice-by p {
+        font-size: 18px;
+    }
+    .signature img {
+        width: 100px;
+    }
+    .signature p {
+        font-size: 18px;
+        text-transform: capitalize;
+        border-top: 1px solid #6b6b6b;
+        margin-top: 10px;
+    }
+    .signature {
+        width: 200px;
+        text-align: center;
+        float: right;
+    }
+</style>
+<div class="container">
+    <div class="row heading">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-xs-8">
+            <div class="invoice-title">
+                <h3>এম এস হুদা ইন্সটিটিউট অব মেডিকেল টেকনোলজি</h3>
+                <h4>ডিজিটালাইজড ডায়াগনস্টিক সেন্টার ও হাসপাতাল</h4>
+                <h4>Phone No: 01674514498</h4>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center"><strong>Patient Info</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th class="text-center">Invoice No</th>
+                                    <td class="text-center">1003</td>
+                                    <th class="text-center">Patient Id</th>
+                                    <td class="text-center">3000</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center">Name</th>
+                                    <td class="text-center">SURMILA</td>
+                                    <th class="text-center">Age</th>
+                                    <td class="text-center">32</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center">Gender</th>
+                                    <td class="text-center">Male</td>
+                                    <th class="text-center">Mobile</th>
+                                    <td class="text-center">01711111111</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center">Advice By</th>
+                                    <td class="text-center"> Md Mahfuzur Rahman</td>
+                                    <th class="text-center">Date</th>
+                                    <td class="text-center">Thursday, 21 Mar 2019, 02:00 am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center"><strong>Order summary</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-bordered">
+                            <thead>
+                            <tr>
+                                <td class="text-center"><strong>SI</strong></td>
+                                <td class="text-center"><strong>Test Description</strong></td>
+                                <td class="text-center"><strong>Category</strong></td>
+                                <td class="text-center"><strong>Amount</strong></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">Test One</td>
+                                <td class="text-center">Test</td>
+                                <td class="text-center">400</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">Test two</td>
+                                <td class="text-center">Test</td>
+                                <td class="text-center">400</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">Test three</td>
+                                <td class="text-center">Test</td>
+                                <td class="text-center">400</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"><strong>Gross Bill</strong></td>
+                                <td class="text-center"><b>1200</b></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"><strong>Discount</strong></td>
+                                <td class="text-center"><b>200</b></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"><strong>Total Paid</strong></td>
+                                <td class="text-center"><b>800</b></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"><strong>Due</strong></td>
+                                <td class="text-center"><b>200</b></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="invoice-by">
+                <p><b>Invoice By</b> : Arif</p>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <div class="signature">
+                <img src="signature.jpg" alt="">
+                <p>authorize by</p>
+            </div>
+        </div>
+    </div>
+</div>

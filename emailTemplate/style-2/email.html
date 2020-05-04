@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 1em;
+            line-height: 1.5em;
+            letter-spacing: 0.5px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .content-wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .table-wrapper {
+            margin-top: 25px;
+        }
+
+        table {
+            margin: 10px 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            color: #4a4a4a;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            text-transform: capitalize;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+
+        header h1 {
+            text-transform: capitalize;
+            text-align: center;
+            margin: 0;
+            background-color: green;
+            padding: 30px 0;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .main-content {
+            padding: 30px 0;
+            overflow: hidden;
+        }
+
+        .signature-area {
+            text-align: center;
+            margin-top: 25px;
+            float: right;
+        }
+
+        footer {
+            text-align: center;
+            background: green;
+            padding: 25px 10px;
+            color: #ffffff;
+        }
+
+        @media only screen and (max-width: 767px) {
+            th {
+                font-weight: 600;
+                font-size: 0.9em;
+            }
+            .signature-area{
+                float: initial;
+            }
+            .content-wrapper {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content-wrapper">
+    <header>
+        <h1>Metering Portal</h1>
+    </header>
+    <div class="main-content">
+        <h4>Hi {0},</h4>
+        <p>Thank you for raising a Meter Exchange / Crossed Metering / Address Amendment form.</p>
+        <div class="table-wrapper">
+            <h4>CASE DETAILS - Protect Private</h4>
+            <table class="table" cellspacing="0">
+                <tr>
+                    <th>Form Reference:</th>
+                    <td>{1}</td>
+                </tr>
+                <tr>
+                    <th>Customer Name:</th>
+                    <td>{2}</td>
+                </tr>
+                <tr>
+                    <th>BP:</th>
+                    <td>{3}</td>
+                </tr>
+                <tr>
+                    <th>Account Number:</th>
+                    <td>{4}</td>
+                </tr>
+                <tr>
+                    <th>Logged Date:</th>
+                    <td>{5}</td>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <td>
+                        {6}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        Please be aware some cases may be rejected if any of the criteria cannot be obtained.
+        Also note that cases cannot be escalated until the next working day after raising the form. <br/>
+
+        <br>
+        <br>
+        <div class="signature-area">
+            <p>Kind regards</p>
+            <p>NE Residential and SME Metering Team</p>
+        </div>
+    </div>
+    <footer>
+        Please do not reply to this e-mail. It was sent to you automatically by the MeteringPortal
+        application. If you believe you have received this in error,<br>
+        please contact <a href="mailto:CS_AppDev@edfenergy.com?Subject=MeteringPortal%20Issue" target="_top">AppDev
+        team</a>.
+    </footer>
+</div>
+</body>
+</html>

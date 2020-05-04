@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #ddd;
+        }
+
+        body {
+            font-size: 1em;
+            line-height: 1.5em;
+            letter-spacing: 0.5px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .content-wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .print-area {
+            overflow: hidden;
+            padding: 15px 0;
+        }
+
+        .print-area button {
+            background: green;
+            border: none;
+            border-radius: 5px;
+            padding: 7px 20px;
+            color: #fff;
+            float: right;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .information-area {
+            padding: 15px 0;
+            overflow: hidden;
+        }
+
+        .sender-information {
+            width: 50%;
+            float: left;
+        }
+
+        .invoice-information {
+            width: 50%;
+            float: right;
+        }
+
+        .sender-information h3, .sender-information h4 {
+            text-transform: capitalize;
+            color: #4a4a4a;
+        }
+
+        .invoice-information h3 {
+            text-transform: capitalize;
+            color: #4a4a4a;
+        }
+
+        .invoice-information p {
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+
+        .invoice-information p strong {
+            color: #4a4a4a;
+            letter-spacing: .7px;
+        }
+
+        .receiver-area h3, .receiver-area h4 {
+            text-transform: capitalize;
+            color: #4a4a4a;
+        }
+
+        .receiver-area {
+            padding: 15px 0;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            color: #4a4a4a;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            text-transform: capitalize;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .invoice-calculation {
+            width: 50%;
+            float: right;
+        }
+
+        @media only screen and (max-width: 767px) {
+            th {
+                font-weight: 600;
+                font-size: 0.9em;
+            }
+
+            .sender-information {
+                width: 100%;
+                float: initial;
+            }
+
+            .invoice-information {
+                width: 100%;
+                float: initial;
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #ddd;
+            }
+
+            .invoice-calculation {
+                width: 100%;
+                float: initial;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content-wrapper">
+    <div class="print-area border-bottom">
+        <button><i class="fa fa-print"></i> print</button>
+    </div>
+    <div class="information-area border-bottom">
+        <div class="sender-information">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100" alt="">
+            </div>
+            <h3>company name</h3>
+            <h4>united kingdom</h4>
+            <p>12345678</p>
+            <p>example@gmail.com</p>
+        </div>
+        <div class="invoice-information">
+            <h3>invoice #1</h3>
+            <p><strong>date from: </strong> 29/01/2020 - <span>7:05 pm</span></p>
+            <p><strong>to: </strong> 29/02/2020 - <span>7:05 pm</span></p>
+            <p><strong>settle date: </strong> 29/03/2020 - <span>7:05 pm</span></p>
+            <p><strong>Reference number: </strong> test</p>
+            <p><strong>total trips: </strong> 3</p>
+        </div>
+    </div>
+    <div class="receiver-area border-bottom">
+        <h3>to:</h3>
+        <h4>john doe</h4>
+        <p><strong>phone: </strong>01739852881</p>
+        <p><strong>email: </strong>example@gmail.com</p>
+    </div>
+    <div class="invoice-details-area">
+        <table>
+            <tr>
+                <th>ride id</th>
+                <th>booking date</th>
+                <th>rider details</th>
+                <th>payment mode</th>
+                <th>bill amount</th>
+                <th>commission</th>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>29/01/2020 - 7:15 pm</td>
+                <td>sohel rana</td>
+                <td>cash</td>
+                <td>£ 3.00</td>
+                <td>£ 0.5</td>
+            </tr>
+            <tr>
+                <td>112</td>
+                <td>29/01/2020 - 7:10 pm</td>
+                <td>sohel rana</td>
+                <td>cash</td>
+                <td>£ 8.00</td>
+                <td>£ 0.8</td>
+            </tr>
+            <tr>
+                <td>113</td>
+                <td>29/01/2020 - 7:00 pm</td>
+                <td>sohel rana</td>
+                <td>cash</td>
+                <td>£ 10.50</td>
+                <td>£ 1.00</td>
+            </tr>
+        </table>
+    </div>
+    <div class="invoice-calculation">
+        <table>
+            <tr>
+                <th>total cash</th>
+                <td>£ 30</td>
+            </tr>
+            <tr>
+                <th>total card</th>
+                <td>£ 0</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
